@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\Lab 1\Task1Test\Task1Test\bin\Debug\Task1Test.exe.config
+C:\Users\Admin\Desktop\Lab 1\Task1Test\Task1Test\bin\Debug\Task1Test.exe
+C:\Users\Admin\Desktop\Lab 1\Task1Test\Task1Test\bin\Debug\Task1Test.pdb
+C:\Users\Admin\Desktop\Lab 1\Task1Test\Task1Test\obj\Debug\Task1Test.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Lab 1\Task1Test\Task1Test\obj\Debug\Task1Test.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Lab 1\Task1Test\Task1Test\obj\Debug\Task1Test.exe
+C:\Users\Admin\Desktop\Lab 1\Task1Test\Task1Test\obj\Debug\Task1Test.pdb
