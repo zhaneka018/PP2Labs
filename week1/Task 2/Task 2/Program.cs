@@ -8,22 +8,22 @@ namespace Task_2
 {
     class Student
     {
-        string name;
+        string name; //Объявляем переменные
         string id;
         int year;
-        public Student(string name, string id)
+        public Student(string name, string id) // Создаем конструктор, который принимает переменные имя и айди
         {
             this.name = name;
             this.id = id;
         }
-        public void increment(int year)
+        public void increment(int year) // Конструктор, который принимает переменную год и сразу же увеличивает его значение на единицу
         {
-            year++;
+            year++; // то есть вот тут значение переменной YEAR увеличивается
             this.year = year;
         }
-        public override string ToString()
+        public override string ToString() // Записать весь стринг в строку IDK
         {
-            return name + " " + id + " " + year;
+            return name + " " + id + " " + year;   // Команда сиаут
         }
 
     }
