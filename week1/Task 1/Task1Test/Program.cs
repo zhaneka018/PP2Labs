@@ -10,11 +10,11 @@ namespace Task1Test
     {
         static void Main(string[] args)
         {
-            string str = Console.ReadLine();
-            int x = int.Parse(str);
-            int counter = 0;
+            string str = Console.ReadLine(); // Считываем наш string
+            int x = int.Parse(str); //String сохраняем в integers
+            int counter = 0; // Создаем счетчик каунтер для считывания делителей наших чисел
             //List<int> Massive = new List<int>();
-            int[] n = new int[x];
+            int[] n = new int[x]; // Создаем массив
             //string[] text = str.Split();
             for (int i = 0; i < x; i++)
             {
@@ -24,12 +24,12 @@ namespace Task1Test
                 int number = int.Parse(line);
                 for(int j = 1; j <= number; j++)
                 {
-                    if(number % j == 0)
+                    if(number % j == 0) 
                     {
                         counter++;
                     }
                 }
-                if(counter == 2)
+                if(counter == 2) //Прайм число - это число имеющее ровно два различных натуральных делителя — единицу и самого себя
                 {
                     n[i] = number;
                 }
