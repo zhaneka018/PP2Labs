@@ -10,17 +10,17 @@ namespace Task_4
     {
         static void Main(string[] args)
         {
-            string triangle = "[*]";
-            int k = int.Parse(Console.ReadLine());
-            int x = 1;
-            for(int i = 0; i < k; i++)
+            int n = int.Parse(Console.ReadLine()); //Считываем и записываем со стринга в интейджер
+            for(int i=0; i<n; i++) //Пробегаемся по 2D array
             {
-                for(int j = 0; j < x; j++)
+                for(int j=0; j<n; j++)
                 {
-                    Console.Write(triangle);
+                    if (i >= j) Console.Write("[*]"); //Если условие выполняется, то выводим звездочку
+                    {
+                        Console.WriteLine();
+                    }
                 }
-                Console.WriteLine();
-                x++;
+            }
             }
             Console.ReadKey();
         }
