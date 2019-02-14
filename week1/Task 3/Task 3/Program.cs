@@ -10,32 +10,32 @@ namespace Task_3
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-            int[] arr = new int[n];
+            int n = int.Parse(Console.ReadLine()); // со стринга в интейджер переводим
+            int[] arr = new int[n]; // создаем массив
             for(int i = 0; i < n; i++)
             {
-                int num = int.Parse(Console.ReadLine());
-                arr[i] = num;
+                int num = int.Parse(Console.ReadLine()); // числа в массиве переводим так же со стринга в инт
+                arr[i] = num; 
             }
-            MyMethod(arr, n);
+            MyMethod(arr, n); // создание функции или метода
             Console.ReadKey();
         }
         static void MyMethod(int[] arr, int n)
         {
-            List<int> vector = new List<int>();
+            List<int> vector = new List<int>(); //Создаем новый вектор
             for(int i = 0; i < n; i++)
             {
-                vector.Add(arr[i]);
+                vector.Add(arr[i]); // Х2 и сохраняем
                 vector.Add(arr[i]);
             }
             //string asd = "123123";
             //int[] massive = new int[20];
             //Console.WriteLine(massive.Length);
             //Console.WriteLine(asd.Length);
-            Console.WriteLine(vector.Count());
+            Console.WriteLine(vector.Count()); //Считываем размер нового массива
             for(int i = 0; i < vector.Count(); i++)
             {
-                Console.Write(vector[i] + " ");
+                Console.Write(vector[i] + " "); // и выводим ответ:)
             }
         }
     }
