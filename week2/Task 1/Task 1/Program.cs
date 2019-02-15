@@ -11,18 +11,18 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
-            string isPalindrome = File.ReadAllText(@"C:\Users\Zhanerke\Desktop\PP2Labs\inputpalindrome.txt");
-            int size = isPalindrome.Count();
+            string isPalindrome = File.ReadAllText(@"C:\Users\Zhanerke\Desktop\PP2Labs\inputpalindrome.txt");//Указываем откуда считывать стринг
+            int size = isPalindrome.Count();//Размер нашего стринга
             bool ok = true;
             for (int i = 0; i < size / 2; i++)
             {
                 if (isPalindrome[i] != isPalindrome[size - i - 1])
                 {
                     ok = false;
-                    break;
+                    break; // Проверяем на палиндромность и если !палиндром, то останавливаем цикл
                 }
             }
-            if (ok == true)
+            if (ok == true) // Если палиндром, то выводим соотвестственно "YES"
             {
                 Console.WriteLine("This word is Palindrome word -> " + isPalindrome);
             }
